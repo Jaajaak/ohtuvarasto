@@ -1,3 +1,3 @@
 # ohtuvarasto
 
-(https://github.com/Jaajaak/ohtuvarasto/workflows/CI/badge.svg)
+https://github.com/Jaajaak/ohtuvarasto/workflows/CI/badge.svg
