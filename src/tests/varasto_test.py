@@ -11,7 +11,7 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_alku_saldo_miinuksella(self):
-        #Väärä alku_saldo
+        # Väärä alku_saldo
         self.varasto = Varasto(10, -5)
 
         self.assertAlmostEqual(self.varasto.saldo, 0)
@@ -73,17 +73,17 @@ class TestVarasto(unittest.TestCase):
     def test_ota_negatiivinen(self):
         saatu_maara = self.varasto.ota_varastosta(-5)
 
-        #Negatiivisen määrän otto
+        # Negatiivisen määrän otto
         self.assertAlmostEqual(saatu_maara, 0)
 
     def test_lisaanegatiivinen(self):
         self.varasto.lisaa_varastoon(-5)
 
-        #Negatiivisen luvun lisäys
+        # Negatiivisen luvun lisäys
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_str_vastaus(self):
         self.varasto = Varasto(10, 5)
 
-        #Testaa tekstin oikeus
+        # Testaa tekstin oikeus
         self.assertEqual(str(self.varasto), "saldo = 5, vielä tilaa 5")
